@@ -1,5 +1,5 @@
 package com.example.tipcalculator
-
+import androidx.compose.material3.Icon
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -42,6 +42,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.ui.res.painterResource
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -150,6 +151,7 @@ fun EditNumberField(
         value = value,
         onValueChange = onValueChange,
         modifier = modifier,
+        leadingIcon = { Icon(painter = painterResource(id = leadingIcon), null) },
         label = { Text(stringResource(label)) },
         singleLine = true,
         keyboardOptions = keyboardOptions,
