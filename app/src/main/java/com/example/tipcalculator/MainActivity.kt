@@ -186,5 +186,6 @@ fun RoundTheTipRow ( roundUp: Boolean,
 fun TipTimeLayoutPreview() {
     TipCalculatorTheme {
         TipTimeLayout()
+
     }
 }
